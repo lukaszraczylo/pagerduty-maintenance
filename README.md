@@ -17,7 +17,7 @@ To check current maintenance windows for project use *only* -p switch
 Usage:
 ```
 Options:
-  -p, --project=<s>        Pick specific PagerDuty project.
+  -p, --project=<s+>       Pick specific PagerDuty services.
   -t, --time=<s>           Enable maintenance window for specific time (in minutes).
   -l, --list-projects      Shows list of the projects together with their ID
   -d, --description=<s>    Optional description for maintenance window.
@@ -35,4 +35,14 @@ To manage maintenance mode visit: https://potato.pagerduty.com/services/PBCXXXX
 START_TIME     | END_TIME                  | DESCRIPTION
 ---------------|---------------------------|----------------------------
 14 seconds ago | 2015-06-11 13:01:08       | Automated maintenance mode.
+```
+
+## Changelog:
+
+```
+- Take multiple arguments for project:
+  It creates a single maintenance window with specified services included.
+- Filter:
+  Find all the services matching name from --filter field.
+- Automated maintenance mode description contains creators system username.
 ```

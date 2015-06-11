@@ -17,10 +17,11 @@ To check current maintenance windows for project use *only* -p switch
 Usage:
 ```
 Options:
-  -p, --project=<s+>       Pick specific PagerDuty services.
+  -p, --project=<s+>       Pick specific PagerDuty service.
   -t, --time=<s>           Enable maintenance window for specific time (in minutes).
-  -l, --list-projects      Shows list of the projects together with their ID
+  -l, --list-projects      Shows list of the services together with their ID
   -d, --description=<s>    Optional description for maintenance window.
+  -f, --filter=<s>         Search and apply for services matching the filter
   -h, --help               Show this message
 ```
 
